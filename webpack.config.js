@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
+        clean: true,
     },
 
     devtool: 'inline-source-map',
@@ -24,5 +26,13 @@ module.exports = {
         hot: true,
         compress: true,
         historyApiFallback: true,
-    }
+    },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Restaurant Page',
+            filename: 'index.html',
+            template: './src/template.html',
+        })
+    ],
 }
