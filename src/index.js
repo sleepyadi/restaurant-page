@@ -2,11 +2,12 @@ import { LayoutCreator } from "./utils";
 import { generateHeader } from "./header";
 import { generateHome } from "./home";
 import { generateAbout } from "./about";
+import { generateMenu } from "./menu";
 
 
 const pages = {
     home: generateHome,
-    menu: '',
+    menu: generateMenu,
     about: generateAbout,
 }
 
