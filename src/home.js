@@ -48,17 +48,16 @@ function createLocationCard() {
 function generateHome() {
     // desc open-time location
     const home = new LayoutCreator({type: 'div', tagType: 'class', tag: 'home'});
-    const title = document.createElement('h3');
+    const title = document.createElement('h1');
     title.textContent = "The X Restaurant!";
 
     const description = createDescriptionCard();
     const openTime = createTimeCard();
     const location = createLocationCard();
 
-    home.addElement([description, openTime, location]);
+    home.addElement([title, description, openTime, location]);
 
     return home.element;
-
 }
 
 export { generateHome };
