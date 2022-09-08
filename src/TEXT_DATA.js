@@ -1,4 +1,4 @@
-// dummy data for placeholder values
+// dummy data for placeholder values (example menu items / home and about texts ?)
 
 const MENU = [
     {
