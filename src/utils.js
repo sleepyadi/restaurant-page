@@ -28,10 +28,43 @@ class LayoutCreator {
             })
             return;
         } 
-        
+
+        this._element.appendChild(elements);
+    }
+}
+
+class CardCreator {
+    // tries to follow bem
+    constructor(name) {
+        this._element = document.createElement('div');
+        this._element.classList.add(name);
+    }
+
+    get element() {
+        return this._element;
+    }
+
+    set element(val) {
+        throw new Error('Cannot re-assign element after object initialization.');
+    }
+    
+    addComponent(type, componentName) {
+        const newElement = document.createElement(type);
+        newElement.classList.add(`${componentName}`);
+        this._element.appendChild(newElement);
+    }
+
+    addElement(elements) {
+        if (elements instanceof Array) {
+            elements.forEach((element) => {
+                this._element.appendChild(element);
+            })
+            return;
+        } 
+
         this._element.appendChild(elements);
     }
 }
 
 
-export { LayoutCreator }
+export { LayoutCreator, CardCreator };

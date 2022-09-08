@@ -1,0 +1,1 @@
+// import data from a config like MENU_ITEMS.js or something ?
