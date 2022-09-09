@@ -1,5 +1,6 @@
 import { LayoutCreator } from "./utils";
 import { generateHeader } from "./header";
+import { generateFooter } from "./footer";
 import { generateHome } from "./home";
 import { generateAbout } from "./about";
 import { generateMenu } from "./menu";
@@ -22,6 +23,7 @@ function init() {
     
     const content = new LayoutCreator({type: 'div', tagType: 'id', tag: 'content'});
     const header = generateHeader();
+    const footer = generateFooter();
 
     if (header) {
         const tabs = header.querySelectorAll('.header__tab');
@@ -30,7 +32,7 @@ function init() {
         });
     }
     
-    content.addElement([header, pages.home()]);
+    content.addElement([header, pages.home(), footer]);
 }
 
 init();
