@@ -17,6 +17,12 @@ body, #content {
     flex-direction: column;
 }
 
+/* --------------------- UTILITY -----------------------*/
+.card {
+    padding: 1em;
+}
+
+
 /* --------------------- HEADER -----------------------*/
 .header {
     padding: 0.5em;
@@ -30,7 +36,27 @@ body, #content {
 /* ---------------------- Main --------------------- */
 main {
     flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(350px, 80%, 80%);
 }
+
+/* ---------------------- Home --------------------- */
+.home {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.home__title {
+    margin-bottom: 0;
+} 
+
+.home h1,.home h2 {
+    text-align: center;
+}
+
+
 
 
 /* ---------------------- FOOTER --------------------- */

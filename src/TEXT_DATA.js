@@ -4,13 +4,13 @@ const MENU = [
     {
         name: 'Test',
         price: '$3',
-        desc: 'Tasty food',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: 'test/something'
     },
     {
         name: 'Test2',
         price: '$13',
-        desc: 'Tasty food 2',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: 'test/something2'
     },
 

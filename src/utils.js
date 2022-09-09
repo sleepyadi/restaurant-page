@@ -38,6 +38,7 @@ class CardCreator {
     constructor(name) {
         this._element = document.createElement('div');
         this._element.classList.add(name);
+        this._element.classList.add('card');
     }
 
     get element() {
