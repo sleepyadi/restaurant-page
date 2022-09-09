@@ -36,7 +36,7 @@ function createMenuCard() {
 
 function generateMenu() {
     // grid menu items
-    const menu = new LayoutCreator({type: 'div', tagType: 'class', tag: 'menu'});
+    const menu = new LayoutCreator({type: 'main', tagType: 'class', tag: 'menu'});
     const menuTitle = document.createElement('h1');
     menuTitle.classList.add('menu__title');
     menuTitle.textContent = 'Menu';

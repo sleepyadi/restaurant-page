@@ -38,7 +38,7 @@ function createContactCard() {
 
 function generateAbout() {
     // about-us-title info contact-us-title info
-    const about = new LayoutCreator({type: 'div', tagType: 'class', tag: 'about'});
+    const about = new LayoutCreator({type: 'main', tagType: 'class', tag: 'about'});
 
     const aboutUs = createAboutCard();
     const contact = createContactCard();

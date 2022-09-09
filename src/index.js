@@ -4,6 +4,8 @@ import { generateFooter } from "./footer";
 import { generateHome } from "./home";
 import { generateAbout } from "./about";
 import { generateMenu } from "./menu";
+import 'normalize.css';
+import './styles/main.css';
 
 
 const pages = {
@@ -16,6 +18,9 @@ function handleTabs(event) {
     const tabName = event.target.getAttribute('data-target-tab');
     const content = document.querySelector('#content');
     const newNode = pages[tabName];
+    if (content.children[1].getAttribute('class').includes(tabName)) {
+        return;
+    }
     content.replaceChild(newNode(), content.children[1]);
 }
 

@@ -1,0 +1,41 @@
+/* adding one style for everything cuz confusion otherwise */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+body, #content {
+    min-height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------- HEADER -----------------------*/
+.header {
+    padding: 0.5em;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ---------------------- Main --------------------- */
+main {
+    flex: 1;
+}
+
+
+/* ---------------------- FOOTER --------------------- */
+.footer {
+    padding: 0.5em;
+    margin-top: auto;
+    text-align: center;
+}

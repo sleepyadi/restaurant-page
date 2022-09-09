@@ -47,7 +47,7 @@ function createLocationCard() {
 
 function generateHome() {
     // desc open-time location
-    const home = new LayoutCreator({type: 'div', tagType: 'class', tag: 'home'});
+    const home = new LayoutCreator({type: 'main', tagType: 'class', tag: 'home'});
     const title = document.createElement('h1');
     title.textContent = "The X Restaurant!";
 
