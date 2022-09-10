@@ -17,9 +17,6 @@ class LayoutCreator {
         throw new Error('Cannot re-assign element after object initialization.');
     }
 
-    addChild() {
-
-    }
 
     addElement(elements) {
         if (elements instanceof Array) {

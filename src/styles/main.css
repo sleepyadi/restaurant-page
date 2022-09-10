@@ -16,7 +16,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 :root {
@@ -31,10 +30,11 @@
     --card-bg: rgba(255, 255, 255, 0.4);
     --main-title-fnt: 'Dancing Script';
     --sub-title-fnt: 'Bebas Neue';
-    /* --desc-font: 'Monster Rat'; */
 }
 
-body, #content {
+body,
+html,
+#content {
     min-height: 100vh;
 }
 
@@ -122,14 +122,14 @@ main {
 .home .home__desc {
     padding: 2.5em 1.5em;
     font-style: italic;
-    /* font-family: var(--desc-font); */
+ 
 }
 
 .home__time, .home__location {
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.8rem;
 }
 
 .home__time-title, .home__location-title {
