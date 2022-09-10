@@ -1,4 +1,15 @@
 /* adding one style for everything cuz confusion otherwise */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+
 *,
 *::after,
 *::before {
@@ -18,6 +29,9 @@
     --yellow: #FFC60B;
     --mud: #c59d5f;
     --card-bg: rgba(255, 255, 255, 0.4);
+    --main-title-fnt: 'Dancing Script';
+    --sub-title-fnt: 'Bebas Neue';
+    /* --desc-font: 'Monster Rat'; */
 }
 
 body, #content {
@@ -53,8 +67,9 @@ body, #content {
 .header__tab {
     padding: 0.2em 0.4em;
     color: var(--tab-fnt-color);
-    font-weight: bold;
-    /* cursor: pointer; */
+    /* font-weight: bold; */
+    font-family: var(--sub-title-fnt);
+    letter-spacing: 0.1em;
 }
 
 .header__tab:hover {
@@ -93,7 +108,11 @@ main {
     text-align: center;
     width: fit-content;
     padding: 0.3em;
-    border-bottom: 2px solid var(--title-color);;
+    border-bottom: 2px solid var(--title-color);
+    font-family: var(--main-title-fnt);
+    font-size: 3.3rem;
+    letter-spacing: 0.1em;
+    color: var(--title-color);
 } 
 
 .home h1,.home h2 {
@@ -103,6 +122,7 @@ main {
 .home .home__desc {
     padding: 2.5em 1.5em;
     font-style: italic;
+    /* font-family: var(--desc-font); */
 }
 
 .home__time, .home__location {
@@ -110,6 +130,10 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+}
+
+.home__time-title, .home__location-title {
+    font-family: var(--sub-title-fnt);
 }
 
 /* ---------------------- MENU --------------------- */
@@ -121,6 +145,9 @@ main {
     width: fit-content;
     padding: 0.3em;
     border-bottom: 2px solid var(--title-color);
+    font-family: var(--main-title-fnt);
+    color: var(--title-color);
+    font-size: 2.5rem;
 }
 
 .menu .menu__items {
@@ -164,11 +191,14 @@ main {
     width: fit-content;
     padding: 0.3em;
     border-bottom: 2px solid var(--title-color);
+    font-family: var(--main-title-fnt);
+    color: var(--title-color);
+    font-size: 2.5rem;
 }
 
 .about__title {
+    font-family: var(--sub-title-fnt);
     text-align: center;
-    color: var(--title-color);
 }
 
 .about .card p {
