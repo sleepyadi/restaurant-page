@@ -41,10 +41,14 @@ function generateAbout() {
     // about-us-title info contact-us-title info
     const about = new LayoutCreator({type: 'main', tagType: 'class', tag: 'about'});
 
+    const aboutTitle = document.createElement('h1');
+    aboutTitle.classList.add('about__title-main');
+    aboutTitle.textContent = 'About';
+
     const aboutUs = createAboutCard();
     const contact = createContactCard();
 
-    about.addElement([aboutUs, contact]);
+    about.addElement([aboutTitle, aboutUs, contact]);
 
     return about.element;
 }

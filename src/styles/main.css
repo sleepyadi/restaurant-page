@@ -14,7 +14,9 @@
     --title-color: 	#ffbf00;
     --tab-fnt-color: #fff;
     --main-bg: #f2f2f2;
-    --header-bg: rgba(0,0,0,0.6);
+    --header-bg: rgba(0,0,0,0.8);
+    --yellow: #FFC60B;
+    --mud: #c59d5f;
 }
 
 body, #content {
@@ -30,6 +32,7 @@ body, #content {
 .card {
     padding: 1em;
     outline: 1px solid var(--title-color);
+    box-shadow: var(--title-color) 0px 5px 15px;
 }
 
 
@@ -54,7 +57,9 @@ body, #content {
 .header__tab:hover {
     background-color: rgba(0,0,0,0.3);
     cursor: pointer;
+    color: var(--title-color);
     border-radius: 5px;
+    transform: scale(1.05);
 }
 
 /* ---------------------- Main --------------------- */
@@ -81,12 +86,58 @@ main {
     text-align: center;
 }
 
+/* ---------------------- MENU --------------------- */
+.menu__title {
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0.3em;
+    border-bottom: 2px solid var(--title-color);;
+}
+
+.menu .menu__items {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+
+.menu__item-name {
+    color: var(--mud);
+}
+
+.menu-item-price {
+    font-weight: bold;
+}
+
+.menu-item-desc {
+
+}
+
 
 /* ---------------------- ABOUT --------------------- */
 .about {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+}
+.about__title-main {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0.3em;
+    border-bottom: 2px solid var(--title-color);
 }
 
 .about__title {

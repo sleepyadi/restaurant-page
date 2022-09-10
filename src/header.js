@@ -12,7 +12,7 @@ function generateHeader() {
     menuTab.element.textContent = 'Menu';
     menuTab.element.setAttribute('data-target-tab', 'menu');
     
-    aboutTab.element.textContent = 'About Us';
+    aboutTab.element.textContent = 'About';
     aboutTab.element.setAttribute('data-target-tab', 'about');
     
     header.addElement([homeTab.element, menuTab.element, aboutTab.element]);
