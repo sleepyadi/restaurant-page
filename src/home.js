@@ -1,4 +1,5 @@
 import { LayoutCreator, CardCreator } from "./utils";
+import { HOME } from "./TEXT_DATA";
 
 
 function createDescriptionCard() {
@@ -6,7 +7,7 @@ function createDescriptionCard() {
     
     const descP = document.createElement('p');
     descP.classList.add('home__desc-para')
-    descP.textContent = '';
+    descP.textContent = HOME.desc;
     desc.addElement(descP);
 
     return desc.element;
@@ -19,12 +20,16 @@ function createTimeCard() {
     timeTitle.classList.add('home__time-title')
     timeTitle.textContent = 'Open Hours';
 
-    const timeP = document.createElement('p');
-    timeP.classList.add('home__time-para')
-    timeP.textContent = '';
+    openTime.addElement(timeTitle);
 
-    openTime.addElement([timeTitle, timeP]);
+    for (let text of HOME.openTime) {
+        const timeP = document.createElement('p');
+        timeP.classList.add('home__time-para')
+        timeP.textContent = text;
+        openTime.addElement(timeP)
+    }
 
+    
     return openTime.element;
 
 }
@@ -38,7 +43,7 @@ function createLocationCard() {
 
     const locationP = document.createElement('p');
     locationP.classList.add('home__location-para')
-    locationP.textContent = '';
+    locationP.textContent = HOME.location;
 
     location.addElement([locationTitle, locationP]);
 

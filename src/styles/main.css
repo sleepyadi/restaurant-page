@@ -17,6 +17,7 @@
     --header-bg: rgba(0,0,0,0.8);
     --yellow: #FFC60B;
     --mud: #c59d5f;
+    --card-bg: rgba(255, 255, 255, 0.4);
 }
 
 body, #content {
@@ -26,6 +27,7 @@ body, #content {
 #content {
     display: flex;
     flex-direction: column;
+    background-color: var(--main-bg);
 }
 
 /* --------------------- UTILITY -----------------------*/
@@ -33,6 +35,7 @@ body, #content {
     padding: 1em;
     outline: 1px solid var(--title-color);
     box-shadow: var(--title-color) 0px 5px 15px;
+    background-color: var(--card-bg);
 }
 
 
@@ -67,8 +70,9 @@ main {
     flex: 1;
     margin-left: auto;
     margin-right: auto;
-    width: clamp(350px, 80%, 80%);
+    width: clamp(350px, 70%, 70%);
     padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 /* ---------------------- Home --------------------- */
@@ -79,7 +83,13 @@ main {
 }
 
 .home__title {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0.3em;
+    border-bottom: 2px solid var(--title-color);;
 } 
 
 .home h1,.home h2 {
@@ -94,14 +104,14 @@ main {
     text-align: center;
     width: fit-content;
     padding: 0.3em;
-    border-bottom: 2px solid var(--title-color);;
+    border-bottom: 2px solid var(--title-color);
 }
 
 .menu .menu__items {
     padding: 1.5em;
     display: flex;
     flex-direction: column;
-    row-gap: 1.2rem;
+    row-gap: 2rem;
 }
 
 .menu__item {
@@ -115,12 +125,12 @@ main {
     color: var(--mud);
 }
 
-.menu-item-price {
+.menu__item-price {
     font-weight: bold;
 }
 
-.menu-item-desc {
-
+.menu__item-desc {
+    font-style: italic;
 }
 
 
