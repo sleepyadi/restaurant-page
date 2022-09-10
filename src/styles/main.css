@@ -82,6 +82,10 @@ main {
     row-gap: 1rem;
 }
 
+.home div {
+    margin-bottom: 3rem;
+}
+
 .home__title {
     margin-bottom: 3rem;
     margin-left: auto;
@@ -94,6 +98,18 @@ main {
 
 .home h1,.home h2 {
     text-align: center;
+}
+
+.home .home__desc {
+    padding: 2.5em 1.5em;
+    font-style: italic;
+}
+
+.home__time, .home__location {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 /* ---------------------- MENU --------------------- */
@@ -166,5 +182,13 @@ main {
     padding: 0.5em;
     margin-top: auto;
     text-align: center;
-    background-color: var(--header-bg)
+    background-color: var(--header-bg);
+    color: var(--tab-fnt-color);
+}
+
+.footer .footer__link {
+    text-decoration: none;
+    color: var(--title-color);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px var(--title-color);
 }
