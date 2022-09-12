@@ -16,5 +16,5 @@ of import/exports in javascript and basic npm and webpack usage.
 
 ## TODO:
 - ~~add styling~~
-- add images
-- tryout other features of webpack like codesplitting and lazy loading
+- ~~add images~~
+- tryout other features of webpack like code splitting and lazy loading
