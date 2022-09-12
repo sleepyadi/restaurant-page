@@ -1,7 +1,7 @@
 # Restaurant Page
 
 A restaurant page!
-Live: 
+Live: https://sleepyadi.github.io/restaurant-page/
 
 ## Project Summary
 
@@ -12,6 +12,7 @@ of import/exports in javascript and basic npm and webpack usage.
 
 ## Features
 - A simple restaurant page.
+- single page app with multiple tabs to emulate multi page behavior.
 
 
 ## TODO:
