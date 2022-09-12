@@ -1,17 +1,18 @@
-// dummy data for placeholder values (example menu items / home and about texts ?)
+import Pizza from './assets/pizza.jpg';
+import Pasta from './assets/pasta.jpg';
 
 const MENU = [
     {
-        name: 'Test',
-        price: '$3',
+        name: 'Pizza',
+        price: '$15',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: 'test/something'
+        img: Pizza,
     },
     {
-        name: 'Test2',
-        price: '$13',
+        name: 'Pasta',
+        price: '$10',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        img: 'test/something2'
+        img: Pasta,
     },
 
 ]

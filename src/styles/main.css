@@ -163,6 +163,13 @@ main {
     row-gap: 0.5rem;
 }
 
+.menu__item-img {
+    outline: 4px solid var(--title-color);
+    margin-left: auto;
+    margin-right: auto;
+    width: min(16rem,95%);
+    height: auto;
+}
 
 .menu__item-name {
     color: var(--mud);

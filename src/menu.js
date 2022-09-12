@@ -4,6 +4,10 @@ import { MENU } from "./TEXT_DATA";
 function createMenuItem({name, price, desc, img}) {
     // temporarily no img support will fix later
     const menuItem = new CardCreator('menu__item');
+
+    const itemImg = document.createElement('img');
+    itemImg.classList.add('menu__item-img');
+    itemImg.src = img;
     
     const itemName = document.createElement('h4');
     itemName.classList.add('menu__item-name');
@@ -17,7 +21,7 @@ function createMenuItem({name, price, desc, img}) {
     itemDesc.classList.add('menu__item-desc');
     itemDesc.textContent = desc;
     
-    menuItem.addElement([itemName, itemPrice, itemDesc]);
+    menuItem.addElement([itemImg, itemName, itemPrice, itemDesc]);
     
     return menuItem.element;
 }
